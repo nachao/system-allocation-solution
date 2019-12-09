@@ -75,6 +75,7 @@ export interface IQueryModelItemResolverOptions<T = any> {
 // ....
 ```
 
+更多的 压缩机、库房等都按照同理定义。
 
 
 ### model

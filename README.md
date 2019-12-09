@@ -59,16 +59,16 @@ export interface IQueryModelItemResolverOptions<T = any> {
   // 请求前，对查询条件进行扩展
   beforeInitialize?: (
     item: IParamCriteria,
-    options: IQueryCollect
+    options: IParamCollect
   ) => Promise<void>;
   
   // 请求后对数据进行解析方法
-  parser?: (item: IQueryCriteria<T>) => any;
+  parser?: (item: IParamCriteria<T>) => any;
   onModelCreated?: (item: QueryItem) => void;
   
   // 对每个参数的样式进行自定义
-  formElementRender?: (item: QueryItem) => Element;
-  componentRender?: (item: QueryItem) => Element;
+  formElementRender?: (item: ParamItem) => Element;
+  componentRender?: (item: ParamItem) => Element;
   // ...
 }
 
